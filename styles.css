@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef4ff 0%, #dfeafc 35%, #f7f1ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 1);
+    width: 350px;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(120, 132, 255, 0.18);
+    box-shadow: 0 16px 35px rgba(78, 96, 170, 0.14);
+    backdrop-filter: blur(8px);
+    transition: border-color 1.5s ease, box-shadow 1.5s ease, transform 1.5s ease;
+}
+
+.form-box:hover {
+    border-color: rgba(244, 171, 105, 0.45);
+    box-shadow: 0 20px 42px rgba(190, 125, 70, 0.2);
+    transform: translateY(-3px);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #c7d2fe;
+    border-radius: 10px;
+    background: #f9fafe;
+    transition: background-color 1.5s ease, border-color 1.5s ease, box-shadow 1.5s ease;
+}
+
+input:hover {
+    background: #fffaf3;
+    border-color: #edbd91;
+    box-shadow: 0 0 0 3px rgba(237, 189, 145, 0.16);
+}
+
+input:focus {
+    outline: none;
+    border-color: #7c8cff;
+    box-shadow: 0 0 0 3px rgba(124, 140, 255, 0.12);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6c7bff, #8b5cf6);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 10px 20px rgba(108, 123, 255, 0.25);
+    transition: background-color 1.5s ease, box-shadow 1.5s ease, transform 1.5s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #e89b5b, #d97866);
+    box-shadow: 0 12px 24px rgba(217, 120, 102, 0.32);
+    transform: translateY(-2px);
+}
+
+#emailerror,
+#passworderror {
+    margin-bottom: 40px;
+    display: none;
+    color: red;
+}
+
+.about-link {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.about-link a {
+    color: #5b67d8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-link a:hover {
+    text-decoration: underline;
+}
+
+.about-page {
+    width: 420px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(78, 96, 170, 0.14);
+    text-align: center;
+}
+
+.about-page h1 {
+    margin-bottom: 20px;
+}
+
+.about-page p {
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+.about-page a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #5b67d8;
+    font-weight: 600;
+    text-decoration: none;
+}
